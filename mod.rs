@@ -1,10 +1,10 @@
 use std::env::current_exe;
 use std::io::Result;
-use std::collections::HashMap;
 use std::path::PathBuf;
 
+mod store;
 
-pub type Store<T> = HashMap<String, T>;
+pub use self::store::*;
 
 
 pub fn path_to_asset(asset_name: &str) -> Result<PathBuf>
