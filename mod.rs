@@ -19,6 +19,7 @@ pub fn path_to_asset(asset_name: &str) -> Result<PathBuf>
     }
 }
 
+
 fn debug_path_to_asset(asset_name: &str) -> Result<PathBuf>
 {
     let mut path = current_exe()?;
@@ -29,6 +30,7 @@ fn debug_path_to_asset(asset_name: &str) -> Result<PathBuf>
     path.push(asset_name);
     Ok(path)
 }
+
 
 fn release_path_to_asset(asset_name: &str) -> Result<PathBuf>
 {
