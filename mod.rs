@@ -15,7 +15,7 @@ pub type Texture = Texture2d;
 
 pub fn path_to_asset(asset_name: &str) -> Result<PathBuf>
 {
-    if cfg!(debug_assertions)
+    if true//cfg!(debug_assertions)
     {
         debug_path_to_asset(asset_name)
     }
